@@ -1,0 +1,32 @@
+/* causes the nav to be displayed in front of the header */
+nav {
+  height: 120px; 
+  width: 100%;
+  padding: 0 1.5em;
+  background-color: #4056A1;
+  color: #FFFFFF; 
+  display: flex;
+  align-items: center;
+  position: absolute ;
+  z-index: 1;
+}
+
+.nav-left {
+  display: flex;
+  flex-basis: 80%; 
+}
+
+.tweeter-logo {
+  font-family: 'Bungee', cursive;
+}
+
+.nav-right {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+}
+
+.fas {
+  color: orangered;
+  font-size: 10px;
+}

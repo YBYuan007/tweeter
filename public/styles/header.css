@@ -1,0 +1,21 @@
+header {
+  height: 520px; 
+  width: 100%; 
+  margin: auto;
+  background-color: whitesmoke;
+  background-image: url("../images/background.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-pic {
+  display: flex; 
+  justify-self: flex-end;
+}
+
+.header-name {
+  display: flex;
+  justify-self: flex-end; 
+}
