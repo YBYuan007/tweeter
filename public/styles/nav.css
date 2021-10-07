@@ -1,5 +1,7 @@
 /* causes the nav to be displayed in front of the header */
 nav {
+  position: fixed;
+  top: 0;
   height: 120px; 
   width: 100%;
   padding: 0 1.5em;
@@ -7,8 +9,6 @@ nav {
   color: #FFFFFF; 
   display: flex;
   align-items: center;
-  position: absolute ;
-  z-index: 1;
 }
 
 .nav-left {

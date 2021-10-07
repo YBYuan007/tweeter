@@ -6,6 +6,22 @@ section.new-tweet {
   align-items: center;
 }
 
+p.error-length {
+  display: none;
+  color: red;
+  border: solid red;
+  padding: 10px;
+  top: 0px;
+}
+
+p.error-empty {
+  display: none;
+  color: red;
+  border: solid red;
+  padding: 10px;
+  top: 0px;
+}
+
 .compose_h2 {
   font-size: 20px;
   text-decoration: underline; 
