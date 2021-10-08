@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@1,300;1,600&display=swap" rel="stylesheet">
-
+    
 
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
@@ -23,6 +25,7 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/click.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!--fig-->
@@ -47,7 +50,6 @@
       <div class= "header-pic">
           <img src="/images/profile-hex.png"> 
       </div>
-      <br>
       <div class="header-name">
           <h2>YB OO7</h2>
       </div>
@@ -55,16 +57,19 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container" id="main-cont">
+
+      <!-- new tweets <section> -->
       <section class="new-tweet">
+
         <span class="error-messages">
           <p class="error-length">Too long!! Limit of 140 characters</p>
           <p class="error-empty">You must enter something!</p>
         </span>
         
-        <h2 class= "compose_h2">Compose Tweet</h2>
+        <!-- <h2 class= "compose_h2">Compose Tweet</h2> -->
 
         <form id = "create-tweet">
-          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+          <textarea name="text" id="tweet-text" rows="2" placeholder="What are you humming about?"></textarea>
           <script src="/scripts/composer-char-counter.js"> </script>
 
           <div class="under-text">
@@ -75,9 +80,10 @@
         </form>
       </section>
 
+      <!-- past tweets section  -->
       <section class="old-tweets" id="tweets-container">
-      
       </section>
+
   </main>
   </body>
 </html>

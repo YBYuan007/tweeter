@@ -1,6 +1,9 @@
+/**************/
+/* new tweets */
+/**************/
+
 section.new-tweet {
-  width: 50%;
-  margin:auto;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,18 +30,20 @@ p.error-empty {
   text-decoration: underline; 
 }
 
+#create-tweet {
+  margin-top: 100px;
+  width: 90%;
+  display: flex; 
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
 #tweet-text {
   font-size: 17px;
   border: none; 
   outline: none;
   border-bottom: 2px solid #2a3f83;
   margin: 5px;
-}
-
-form {
-  width: 100%;
-  display: flex; 
-  flex-direction: column;
 }
 
 .under-text {
@@ -58,14 +63,17 @@ button {
   color: red;
 }
 
+/**************/
+/* old tweets */
+/**************/
+
 article {
-  /* border: 100px 0;  */
   padding: 7px;
   border-right: 3px solid black;;
   border-left: 3px solid black;;
   border-top: 3px solid black;;
   border-bottom: 3px solid black;
-  width: 50%;
+  width: 90%;
   margin: 20px auto 20px auto;
   display: flex;
   flex-direction: column;
@@ -111,13 +119,33 @@ footer.tweet-footer {
   justify-content: space-around;
 }
 
-
 p.date {
   font-size: 10px;
   flex-basis: 78%;
 }
 
+/********************************/
+/* 3 tweeter icons change color */
+/********************************/
+
 .fa-solid:hover {
   color: orangered;
 }
+
+
+
+@media only screen and (max-width: 1024px) {
+  section.new-tweet {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+  article { 
+    width: 90%;
+    margin: 20px auto 20px auto;
+  }
+}
+
 

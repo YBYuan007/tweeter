@@ -1,9 +1,12 @@
 header.profile-header {
-  height: 520px; 
-  width: 100%; 
-  margin: auto;
+  height: 400px; 
+  width: 33%; 
+  margin-top: 150px;
+  margin-right: 50px;
+  margin-left: 50px;
   background-color: whitesmoke;
   background-image: url("../images/background.png");
+
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -18,4 +21,18 @@ body header.header-pic {
 body header.header-name {
   display: flex;
   justify-self: flex-end; 
+}
+
+@media  only screen and (max-width: 1024px) {
+  header.profile-header {
+    height: 520px; 
+    width: 100%; 
+    margin: auto;
+    background-color: whitesmoke;
+    background-image: url("../images/background.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
 }
