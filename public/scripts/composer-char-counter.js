@@ -12,7 +12,6 @@ $(document).ready(function() {
     if (b < 0) {
       $('#count-text').addClass("countOver");
     } else {
-      console.log("hello", b);
       $('#count-text').removeClass("countOver");
     }
   });
