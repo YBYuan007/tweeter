@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/index.js",
-    "local": "./node_modules/.bin/nodemon --watch server -e js server/index.js"
+    "local": "./node_modules/.bin/nodemon --watch server -e js server/index.js",
+    "build": "netlify-lambda build express"
   },
   "author": "Lighthouse Labs",
   "license": "ISC",
@@ -16,8 +17,11 @@
     "express": "^4.13.4",
     "md5": "^2.1.0",
     "timeago.js": "^4.0.2"
+    
   },
   "devDependencies": {
-    "nodemon": "^1.9.2"
+    "nodemon": "^1.9.2",
+    "netlify-lambda": "^1.6.3",
+    "serverless-http": "^2.3.0"
   }
 }
